@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Practica_DisPatrones_AGGA" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="center" spacing="160" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-co-mKB">
+                    <rect key="frame" x="16" y="75" width="361" height="727"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DragonBallLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hkX-h8-474">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="157"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="810-J7-dbW" userLabel="Login">
+                            <rect key="frame" x="75.000000000000014" y="360.33333333333331" width="211.33333333333337" height="125.33333333333331"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fyn-IJ-JeH" userLabel="Username">
+                                    <rect key="frame" x="0.0" y="0.0" width="211.33333333333334" height="54.666666666666664"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-3B-R0e">
+                                            <rect key="frame" x="0.0" y="0.0" width="60.333333333333336" height="14.333333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <color key="textColor" red="0.98625212910000004" green="0.92130094770000004" blue="0.3222264051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="alex.gavira@gmail.com" placeholder="mail@" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="23z-T1-t6V">
+                                            <rect key="frame" x="0.0" y="22.333333333333371" width="211.33333333333334" height="23.333333333333329"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        </textField>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Separator" translatesAutoresizingMaskIntoConstraints="NO" id="a7P-g2-N5C">
+                                            <rect key="frame" x="0.0" y="53.666666666666686" width="211.33333333333334" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="23z-T1-t6V" secondAttribute="trailing" id="515-6t-Y1j"/>
+                                        <constraint firstItem="23z-T1-t6V" firstAttribute="leading" secondItem="fyn-IJ-JeH" secondAttribute="leading" id="m72-NQ-zEp"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VQ3-4Y-QOw" userLabel="Password">
+                                    <rect key="frame" x="0.0" y="70.666666666666686" width="211.33333333333334" height="54.666666666666657"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt0-IL-BFi">
+                                            <rect key="frame" x="0.0" y="0.0" width="57" height="14.333333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                            <color key="textColor" red="0.98625212910000004" green="0.92130094770000004" blue="0.3222264051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="abcdef" placeholder="***********" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="3x2-lE-k1r">
+                                            <rect key="frame" x="0.0" y="22.333333333333371" width="211.33333333333334" height="23.333333333333329"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        </textField>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Separator" translatesAutoresizingMaskIntoConstraints="NO" id="wr8-4a-SKc">
+                                            <rect key="frame" x="0.0" y="53.666666666666629" width="211.33333333333334" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3x2-lE-k1r" firstAttribute="leading" secondItem="VQ3-4Y-QOw" secondAttribute="leading" id="RNB-h4-iSL"/>
+                                        <constraint firstAttribute="trailing" secondItem="3x2-lE-k1r" secondAttribute="trailing" id="yxR-FU-4pQ"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7r-K9-R0h">
+                            <rect key="frame" x="0.0" y="689" width="361" height="38"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.98625212910000004" green="0.92130094770000004" blue="0.3222264051" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" title="LOGIN" cornerStyle="capsule" titleAlignment="center">
+                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="E7r-K9-R0h" secondAttribute="trailing" id="kcf-45-dh7"/>
+                        <constraint firstItem="E7r-K9-R0h" firstAttribute="leading" secondItem="dC8-co-mKB" secondAttribute="leading" id="xGr-f1-Ge3"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.9423469901" green="0.60626941919999999" blue="0.25768792629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dC8-co-mKB" secondAttribute="bottom" constant="16" id="HBD-NY-Kpb"/>
+                <constraint firstItem="dC8-co-mKB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="KDN-LN-iEd"/>
+                <constraint firstAttribute="trailing" secondItem="dC8-co-mKB" secondAttribute="trailing" constant="16" id="L6d-u4-ShI"/>
+                <constraint firstItem="dC8-co-mKB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Z7q-8J-WpF"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="DragonBallLogo" width="800" height="157"/>
+        <image name="Separator" width="211.33332824707031" height="1"/>
+    </resources>
+</document>
