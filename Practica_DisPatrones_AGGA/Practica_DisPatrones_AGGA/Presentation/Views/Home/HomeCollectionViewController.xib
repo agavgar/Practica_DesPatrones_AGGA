@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCollectionViewController" customModule="Practica_DisPatrones_AGGA" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login BG" translatesAutoresizingMaskIntoConstraints="NO" id="f3J-73-mbB">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tuA-zb-b3A">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ekq-Hk-mhy">
+                        <size key="itemSize" width="150" height="150"/>
+                        <size key="estimatedItemSize" width="150" height="150"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="12" maxX="16" maxY="12"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.9423469901" green="0.60626941919999999" blue="0.25768792629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="tuA-zb-b3A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4AQ-Ke-Vgj"/>
+                <constraint firstItem="f3J-73-mbB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dgz-k7-3da"/>
+                <constraint firstItem="f3J-73-mbB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HAb-q3-g78"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tuA-zb-b3A" secondAttribute="bottom" id="Kht-Sp-gCo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f3J-73-mbB" secondAttribute="trailing" id="Voc-uc-JfD"/>
+                <constraint firstAttribute="trailing" secondItem="tuA-zb-b3A" secondAttribute="trailing" id="crR-mR-E93"/>
+                <constraint firstItem="tuA-zb-b3A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ktO-A0-fGw"/>
+                <constraint firstAttribute="bottom" secondItem="f3J-73-mbB" secondAttribute="bottom" id="sT9-lP-ikm"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Login BG" width="390" height="844"/>
+    </resources>
+</document>
