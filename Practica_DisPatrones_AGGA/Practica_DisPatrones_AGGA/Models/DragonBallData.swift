@@ -8,12 +8,11 @@
 import Foundation
 
 struct DragonBallHero: Decodable {
-    let id: String
     let name: String
-    let photo: String
+    let id: String
+    let favorite: Bool
     let description: String
-    
-    let heroTransformations: [DragonBallTransforms]
+    let photo: String
 }
 
 struct DragonBallTransforms: Decodable {

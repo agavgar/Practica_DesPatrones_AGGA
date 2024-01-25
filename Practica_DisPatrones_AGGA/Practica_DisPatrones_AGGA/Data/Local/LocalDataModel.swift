@@ -10,6 +10,10 @@ import Foundation
 struct LocalDataModel {
     private enum Constants{
         static let tokenKey = "DBToken"
+        static let heroesKey = "DBAllHeroes"
+        static let heroKey = "DBHero"
+        static let transformListKey = "DBAllTransform"
+        static let transformKey = "DBTransform"
     }
     
     private static let userDefaults = UserDefaults.standard
@@ -22,6 +26,11 @@ struct LocalDataModel {
         if !checkToken(){
             userDefaults.set(token, forKey: Constants.tokenKey)
         }
+    }
+    
+    static func save(hero: [DragonBallHero]){
+            userDefaults.set(hero, forKey: Constants.heroesKey)
+        print(userDefaults.set(hero, forKey: Constants.heroesKey))
     }
     
     static func deleteToken(){

@@ -7,7 +7,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
+    
+    let dispatchQ = DispatchQueue.main
     
     //MARK: - IB Outlets
     @IBOutlet weak var passwordTextField: UITextField!
@@ -38,7 +40,6 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonTap(_ sender: UIButton) {
-        
         viewModel.onLoginButton(email: emailTextField.text, password: passwordTextField.text)
     }
     
@@ -50,19 +51,23 @@ extension LoginViewController {
         
         
         viewModel.loginViewState = { [weak self] status in
-        
+            
             switch status {
             case .loading(let isLoading):
                 self?.loadingView.isHidden = !isLoading
+                self?.errorLabel.isHidden = true
             case .loaded:
-                DispatchQueue.main.async {
+                self?.dispatchQ.async {
                     self?.loadingView.isHidden = true
+                    self?.errorLabel.isHidden = true
                 }
                 //MARK: - Todo navegar a la home
                 self?.navigateToHome()
-            case .showError(let error):
+            case .loginError(let error):
                 self?.errorLabel.text = error
                 self?.errorLabel.isHidden = (error == nil || error?.isEmpty == true)
+            case .networkError(let error):
+                self?.showAlert(message: error)
             }
         }
     }
@@ -70,9 +75,17 @@ extension LoginViewController {
     private func navigateToHome(){
         
         DispatchQueue.main.async {
-            let nextVC = HomeCollectionViewController()
+            let nextVM = HomeViewModel(useCase: GenericArrayUseCase())
+            let nextVC = HomeCollectionViewController(viewModel: nextVM)
             self.navigationController?.setViewControllers([nextVC], animated: true)
         }
         
+    }
+    
+    private func showAlert(message: String){
+        let alertController = UIAlertController(title: "Network Error", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Accept", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
     }
 }

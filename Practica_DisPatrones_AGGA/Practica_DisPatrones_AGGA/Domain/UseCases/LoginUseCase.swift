@@ -26,7 +26,7 @@ final class LoginUseCase {
         
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = HTTPMethods.post
-        urlRequest.setValue("BASIC \(base64LoginString)", forHTTPHeaderField: HTTPMethods.auth)
+        urlRequest.setValue("Basic \(base64LoginString)", forHTTPHeaderField: HTTPMethods.auth)
         
         let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             
@@ -50,6 +50,7 @@ final class LoginUseCase {
                 return
             }
             
+            LocalDataModel.save(token: token)
             completion(.success(token))
             
         }

@@ -64,6 +64,38 @@
 		6E2F221B2B5E56BA00D203CD /* Practica_DisPatrones_AGGAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F221A2B5E56BA00D203CD /* Practica_DisPatrones_AGGAUITestsLaunchTests.swift */; };
 		6E2F22292B5E56EF00D203CD /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F22282B5E56EF00D203CD /* NetworkErrors.swift */; };
 		6E2F222D2B5E572400D203CD /* DragonBallData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F222C2B5E572400D203CD /* DragonBallData.swift */; };
+		6ED1EAFF2B6106F7001AE185 /* GenericArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EAFE2B6106F7001AE185 /* GenericArrayUseCase.swift */; };
+		6ED1EB002B6106F7001AE185 /* GenericArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EAFE2B6106F7001AE185 /* GenericArrayUseCase.swift */; };
+		6ED1EB012B6106F7001AE185 /* GenericArrayUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EAFE2B6106F7001AE185 /* GenericArrayUseCase.swift */; };
+		6ED1EB042B614517001AE185 /* DetailHeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EB032B614517001AE185 /* DetailHeroViewModel.swift */; };
+		6ED1EB052B614517001AE185 /* DetailHeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EB032B614517001AE185 /* DetailHeroViewModel.swift */; };
+		6ED1EB062B614517001AE185 /* DetailHeroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EB032B614517001AE185 /* DetailHeroViewModel.swift */; };
+		6ED1EB0A2B614D9C001AE185 /* DetailHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EB082B614D9C001AE185 /* DetailHeroViewController.swift */; };
+		6ED1EB0B2B614D9C001AE185 /* DetailHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EB082B614D9C001AE185 /* DetailHeroViewController.swift */; };
+		6ED1EB0C2B614D9C001AE185 /* DetailHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1EB082B614D9C001AE185 /* DetailHeroViewController.swift */; };
+		6ED1EB0D2B614D9C001AE185 /* DetailHeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1EB092B614D9C001AE185 /* DetailHeroViewController.xib */; };
+		6ED1EB0E2B614D9C001AE185 /* DetailHeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1EB092B614D9C001AE185 /* DetailHeroViewController.xib */; };
+		6ED1EB0F2B614D9C001AE185 /* DetailHeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED1EB092B614D9C001AE185 /* DetailHeroViewController.xib */; };
+		6ED2AF6B2B60393000F3134A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AF6A2B60393000F3134A /* HomeViewModel.swift */; };
+		6ED2AF6D2B6039F900F3134A /* GenericStatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AF6C2B6039F900F3134A /* GenericStatusLoad.swift */; };
+		6ED2AF6E2B6039F900F3134A /* GenericStatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AF6C2B6039F900F3134A /* GenericStatusLoad.swift */; };
+		6ED2AF6F2B6039F900F3134A /* GenericStatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AF6C2B6039F900F3134A /* GenericStatusLoad.swift */; };
+		6ED478A52B625B3800FB9BB2 /* TransformTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478A42B625B3800FB9BB2 /* TransformTableViewModel.swift */; };
+		6ED478A82B625D6000FB9BB2 /* TransformTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478A62B625D6000FB9BB2 /* TransformTableViewController.swift */; };
+		6ED478A92B625D6000FB9BB2 /* TransformTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478A62B625D6000FB9BB2 /* TransformTableViewController.swift */; };
+		6ED478AA2B625D6000FB9BB2 /* TransformTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478A62B625D6000FB9BB2 /* TransformTableViewController.swift */; };
+		6ED478AB2B625D6000FB9BB2 /* TransformTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED478A72B625D6000FB9BB2 /* TransformTableViewController.xib */; };
+		6ED478AC2B625D6000FB9BB2 /* TransformTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED478A72B625D6000FB9BB2 /* TransformTableViewController.xib */; };
+		6ED478AD2B625D6000FB9BB2 /* TransformTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED478A72B625D6000FB9BB2 /* TransformTableViewController.xib */; };
+		6ED478AE2B625D7400FB9BB2 /* TransformTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478A42B625B3800FB9BB2 /* TransformTableViewModel.swift */; };
+		6ED478AF2B625D7400FB9BB2 /* TransformTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478A42B625B3800FB9BB2 /* TransformTableViewModel.swift */; };
+		6ED478B02B625D7900FB9BB2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AF6A2B60393000F3134A /* HomeViewModel.swift */; };
+		6ED478B12B625D7900FB9BB2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED2AF6A2B60393000F3134A /* HomeViewModel.swift */; };
+		6ED478B22B625D8400FB9BB2 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E00C0F42B5F945B009DF9F5 /* EndPoints.swift */; };
+		6ED478B32B625D8500FB9BB2 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E00C0F42B5F945B009DF9F5 /* EndPoints.swift */; };
+		6ED478B52B62E2F000FB9BB2 /* SingleDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478B42B62E2F000FB9BB2 /* SingleDataUseCase.swift */; };
+		6ED478B62B62E2F000FB9BB2 /* SingleDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478B42B62E2F000FB9BB2 /* SingleDataUseCase.swift */; };
+		6ED478B72B62E2F000FB9BB2 /* SingleDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED478B42B62E2F000FB9BB2 /* SingleDataUseCase.swift */; };
 		6EFF95A52B5E9FB000C752CA /* UIImage+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF95A42B5E9FB000C752CA /* UIImage+URL.swift */; };
 		6EFF95A72B5E9FC800C752CA /* NavItem + Confi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF95A62B5E9FC800C752CA /* NavItem + Confi.swift */; };
 		6EFF95A92B5EA50C00C752CA /* UIColor + ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF95A82B5EA50C00C752CA /* UIColor + ColorScheme.swift */; };
@@ -115,6 +147,16 @@
 		6E2F221A2B5E56BA00D203CD /* Practica_DisPatrones_AGGAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica_DisPatrones_AGGAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6E2F22282B5E56EF00D203CD /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		6E2F222C2B5E572400D203CD /* DragonBallData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonBallData.swift; sourceTree = "<group>"; };
+		6ED1EAFE2B6106F7001AE185 /* GenericArrayUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericArrayUseCase.swift; sourceTree = "<group>"; };
+		6ED1EB032B614517001AE185 /* DetailHeroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroViewModel.swift; sourceTree = "<group>"; };
+		6ED1EB082B614D9C001AE185 /* DetailHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroViewController.swift; sourceTree = "<group>"; };
+		6ED1EB092B614D9C001AE185 /* DetailHeroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeroViewController.xib; sourceTree = "<group>"; };
+		6ED2AF6A2B60393000F3134A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6ED2AF6C2B6039F900F3134A /* GenericStatusLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericStatusLoad.swift; sourceTree = "<group>"; };
+		6ED478A42B625B3800FB9BB2 /* TransformTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformTableViewModel.swift; sourceTree = "<group>"; };
+		6ED478A62B625D6000FB9BB2 /* TransformTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformTableViewController.swift; sourceTree = "<group>"; };
+		6ED478A72B625D6000FB9BB2 /* TransformTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransformTableViewController.xib; sourceTree = "<group>"; };
+		6ED478B42B62E2F000FB9BB2 /* SingleDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleDataUseCase.swift; sourceTree = "<group>"; };
 		6EFF95A42B5E9FB000C752CA /* UIImage+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+URL.swift"; sourceTree = "<group>"; };
 		6EFF95A62B5E9FC800C752CA /* NavItem + Confi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavItem + Confi.swift"; sourceTree = "<group>"; };
 		6EFF95A82B5EA50C00C752CA /* UIColor + ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ColorScheme.swift"; sourceTree = "<group>"; };
@@ -161,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				6E00C1322B60066A009DF9F5 /* Transform */,
+				6ED1EB072B614D73001AE185 /* DetailHeroViewModel */,
 				6E00C1212B5FAC61009DF9F5 /* Home */,
 				6E00C0F32B5F9415009DF9F5 /* Login */,
 			);
@@ -170,6 +213,9 @@
 		6E00C0EB2B5F92F8009DF9F5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6ED478A32B625B1E00FB9BB2 /* TransformTable */,
+				6ED1EB022B6144D6001AE185 /* DetailHero */,
+				6ED2AF692B60392000F3134A /* Home */,
 				6E00C1102B5F9B85009DF9F5 /* Login */,
 			);
 			path = ViewModels;
@@ -188,6 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				6E00C1192B5FA08B009DF9F5 /* LoginUseCase.swift */,
+				6ED1EAFE2B6106F7001AE185 /* GenericArrayUseCase.swift */,
+				6ED478B42B62E2F000FB9BB2 /* SingleDataUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -196,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				6E00C1132B5F9C11009DF9F5 /* LoginStatusLoad.swift */,
+				6ED2AF6C2B6039F900F3134A /* GenericStatusLoad.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +326,8 @@
 			children = (
 				6E00C1332B600694009DF9F5 /* TransformTableViewCell.swift */,
 				6E00C1342B600694009DF9F5 /* TransformTableViewCell.xib */,
+				6ED478A62B625D6000FB9BB2 /* TransformTableViewController.swift */,
+				6ED478A72B625D6000FB9BB2 /* TransformTableViewController.xib */,
 			);
 			path = Transform;
 			sourceTree = "<group>";
@@ -341,6 +392,39 @@
 				6E2F222C2B5E572400D203CD /* DragonBallData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		6ED1EB022B6144D6001AE185 /* DetailHero */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1EB032B614517001AE185 /* DetailHeroViewModel.swift */,
+			);
+			path = DetailHero;
+			sourceTree = "<group>";
+		};
+		6ED1EB072B614D73001AE185 /* DetailHeroViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6ED1EB082B614D9C001AE185 /* DetailHeroViewController.swift */,
+				6ED1EB092B614D9C001AE185 /* DetailHeroViewController.xib */,
+			);
+			path = DetailHeroViewModel;
+			sourceTree = "<group>";
+		};
+		6ED2AF692B60392000F3134A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6ED2AF6A2B60393000F3134A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6ED478A32B625B1E00FB9BB2 /* TransformTable */ = {
+			isa = PBXGroup;
+			children = (
+				6ED478A42B625B3800FB9BB2 /* TransformTableViewModel.swift */,
+			);
+			path = TransformTable;
 			sourceTree = "<group>";
 		};
 		6EFF95A32B5E9F9E00C752CA /* Extension */ = {
@@ -457,10 +541,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED478AB2B625D6000FB9BB2 /* TransformTableViewController.xib in Resources */,
 				6E2F22012B5E56BA00D203CD /* Assets.xcassets in Resources */,
 				6EFF95B42B5EAF5400C752CA /* LaunchScreen.xib in Resources */,
 				6E00C1382B600694009DF9F5 /* TransformTableViewCell.xib in Resources */,
 				6EFF95B02B5EAB7900C752CA /* LoginViewController.xib in Resources */,
+				6ED1EB0D2B614D9C001AE185 /* DetailHeroViewController.xib in Resources */,
 				6E00C12F2B60059B009DF9F5 /* HomeCustomCollectionViewCell.xib in Resources */,
 				6E00C1272B5FACB5009DF9F5 /* HomeCollectionViewController.xib in Resources */,
 			);
@@ -471,6 +557,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E00C1282B5FACB5009DF9F5 /* HomeCollectionViewController.xib in Resources */,
+				6ED478AC2B625D6000FB9BB2 /* TransformTableViewController.xib in Resources */,
+				6ED1EB0E2B614D9C001AE185 /* DetailHeroViewController.xib in Resources */,
 				6E00C1302B60059B009DF9F5 /* HomeCustomCollectionViewCell.xib in Resources */,
 				6E00C1392B600694009DF9F5 /* TransformTableViewCell.xib in Resources */,
 			);
@@ -481,6 +569,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E00C1292B5FACB5009DF9F5 /* HomeCollectionViewController.xib in Resources */,
+				6ED478AD2B625D6000FB9BB2 /* TransformTableViewController.xib in Resources */,
+				6ED1EB0F2B614D9C001AE185 /* DetailHeroViewController.xib in Resources */,
 				6E00C1312B60059B009DF9F5 /* HomeCustomCollectionViewCell.xib in Resources */,
 				6E00C13A2B600694009DF9F5 /* TransformTableViewCell.xib in Resources */,
 			);
@@ -493,16 +583,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED2AF6B2B60393000F3134A /* HomeViewModel.swift in Sources */,
 				6E00C0F72B5F94C5009DF9F5 /* HTTPResponse.swift in Sources */,
 				6EFF95A92B5EA50C00C752CA /* UIColor + ColorScheme.swift in Sources */,
+				6ED1EB042B614517001AE185 /* DetailHeroViewModel.swift in Sources */,
 				6E2F21F82B5E56B900D203CD /* AppDelegate.swift in Sources */,
 				6EFF95A52B5E9FB000C752CA /* UIImage+URL.swift in Sources */,
 				6E00C1352B600694009DF9F5 /* TransformTableViewCell.swift in Sources */,
+				6ED478A82B625D6000FB9BB2 /* TransformTableViewController.swift in Sources */,
 				6E2F21FA2B5E56B900D203CD /* SceneDelegate.swift in Sources */,
+				6ED478A52B625B3800FB9BB2 /* TransformTableViewModel.swift in Sources */,
+				6ED1EAFF2B6106F7001AE185 /* GenericArrayUseCase.swift in Sources */,
 				6E00C1122B5F9B90009DF9F5 /* LoginViewModel.swift in Sources */,
+				6ED2AF6D2B6039F900F3134A /* GenericStatusLoad.swift in Sources */,
+				6ED478B52B62E2F000FB9BB2 /* SingleDataUseCase.swift in Sources */,
 				6E00C0F92B5F94EC009DF9F5 /* HTTPMethods.swift in Sources */,
 				6E2F222D2B5E572400D203CD /* DragonBallData.swift in Sources */,
 				6E00C12C2B60059B009DF9F5 /* HomeCustomCollectionViewCell.swift in Sources */,
+				6ED1EB0A2B614D9C001AE185 /* DetailHeroViewController.swift in Sources */,
 				6E00C11E2B5FAB57009DF9F5 /* LocalDataModel.swift in Sources */,
 				6E2F22292B5E56EF00D203CD /* NetworkErrors.swift in Sources */,
 				6EFF95AF2B5EAB7900C752CA /* LoginViewController.swift in Sources */,
@@ -519,10 +617,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E00C11F2B5FAB57009DF9F5 /* LocalDataModel.swift in Sources */,
+				6ED1EB002B6106F7001AE185 /* GenericArrayUseCase.swift in Sources */,
 				6E00C12D2B60059B009DF9F5 /* HomeCustomCollectionViewCell.swift in Sources */,
 				6E00C1082B5F9514009DF9F5 /* DragonBallData.swift in Sources */,
 				6E00C1002B5F9507009DF9F5 /* NavItem + Confi.swift in Sources */,
+				6ED478B02B625D7900FB9BB2 /* HomeViewModel.swift in Sources */,
+				6ED1EB0B2B614D9C001AE185 /* DetailHeroViewController.swift in Sources */,
+				6ED478A92B625D6000FB9BB2 /* TransformTableViewController.swift in Sources */,
 				6E00C1042B5F950C009DF9F5 /* NetworkErrors.swift in Sources */,
+				6ED1EB052B614517001AE185 /* DetailHeroViewModel.swift in Sources */,
 				6E00C0FC2B5F94FD009DF9F5 /* LoginViewController.swift in Sources */,
 				6E00C1362B600694009DF9F5 /* TransformTableViewCell.swift in Sources */,
 				6E00C1252B5FACB5009DF9F5 /* HomeCollectionViewController.swift in Sources */,
@@ -530,9 +633,13 @@
 				6E00C0FA2B5F94F9009DF9F5 /* HTTPMethods.swift in Sources */,
 				6E00C1152B5F9C65009DF9F5 /* LoginViewModel.swift in Sources */,
 				6E2F220F2B5E56BA00D203CD /* Practica_DisPatrones_AGGATests.swift in Sources */,
+				6ED2AF6E2B6039F900F3134A /* GenericStatusLoad.swift in Sources */,
+				6ED478B62B62E2F000FB9BB2 /* SingleDataUseCase.swift in Sources */,
 				6E00C1022B5F9509009DF9F5 /* UIColor + ColorScheme.swift in Sources */,
 				6E00C0FE2B5F9504009DF9F5 /* UIImage+URL.swift in Sources */,
 				6E00C11B2B5FA44C009DF9F5 /* LoginUseCase.swift in Sources */,
+				6ED478AE2B625D7400FB9BB2 /* TransformTableViewModel.swift in Sources */,
+				6ED478B22B625D8400FB9BB2 /* EndPoints.swift in Sources */,
 				6E00C1182B5F9C69009DF9F5 /* LoginStatusLoad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,9 +648,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED2AF6F2B6039F900F3134A /* GenericStatusLoad.swift in Sources */,
 				6E00C10E2B5F9656009DF9F5 /* HTTPResponse.swift in Sources */,
 				6E00C1172B5F9C68009DF9F5 /* LoginStatusLoad.swift in Sources */,
 				6E00C0FD2B5F94FE009DF9F5 /* LoginViewController.swift in Sources */,
+				6ED478AF2B625D7400FB9BB2 /* TransformTableViewModel.swift in Sources */,
 				6E2F221B2B5E56BA00D203CD /* Practica_DisPatrones_AGGAUITestsLaunchTests.swift in Sources */,
 				6E00C1012B5F9507009DF9F5 /* NavItem + Confi.swift in Sources */,
 				6E00C1262B5FACB5009DF9F5 /* HomeCollectionViewController.swift in Sources */,
@@ -552,10 +661,17 @@
 				6E00C1092B5F9515009DF9F5 /* DragonBallData.swift in Sources */,
 				6E00C1162B5F9C65009DF9F5 /* LoginViewModel.swift in Sources */,
 				6E00C1032B5F950A009DF9F5 /* UIColor + ColorScheme.swift in Sources */,
+				6ED478B72B62E2F000FB9BB2 /* SingleDataUseCase.swift in Sources */,
 				6E00C1202B5FAB57009DF9F5 /* LocalDataModel.swift in Sources */,
 				6E00C12E2B60059B009DF9F5 /* HomeCustomCollectionViewCell.swift in Sources */,
 				6E00C0FF2B5F9504009DF9F5 /* UIImage+URL.swift in Sources */,
+				6ED478B32B625D8500FB9BB2 /* EndPoints.swift in Sources */,
 				6E00C11C2B5FA44D009DF9F5 /* LoginUseCase.swift in Sources */,
+				6ED478AA2B625D6000FB9BB2 /* TransformTableViewController.swift in Sources */,
+				6ED1EB0C2B614D9C001AE185 /* DetailHeroViewController.swift in Sources */,
+				6ED478B12B625D7900FB9BB2 /* HomeViewModel.swift in Sources */,
+				6ED1EB012B6106F7001AE185 /* GenericArrayUseCase.swift in Sources */,
+				6ED1EB062B614517001AE185 /* DetailHeroViewModel.swift in Sources */,
 				6E2F22192B5E56BA00D203CD /* Practica_DisPatrones_AGGAUITests.swift in Sources */,
 				6E00C0FB2B5F94FA009DF9F5 /* HTTPMethods.swift in Sources */,
 			);

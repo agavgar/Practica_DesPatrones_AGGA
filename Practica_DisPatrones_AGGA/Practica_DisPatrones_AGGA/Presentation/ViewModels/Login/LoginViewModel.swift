@@ -11,22 +11,7 @@ final class LoginViewModel {
     
     //MARK: - Binding
     var loginViewState: ((LoginStatusLoad) -> Void)?
-    let loginUseCase = LoginUseCase()
-    
-    //MARK: - Models
-    private var token: String? {
-        get {
-            if let token = LocalDataModel.getToken(){
-                return token
-            }
-            return nil
-        }
-        set{
-            if let token = newValue {
-                LocalDataModel.save(token: token)
-            }
-        }
-    }
+    private let loginUseCase = LoginUseCase()
     
     //MARK: - Metodo Login
     func onLoginButton(email: String?, password: String?) {
@@ -35,7 +20,7 @@ final class LoginViewModel {
         //Check mail y password
         guard let email = email, let password = password, isValid(email,password) else {
             loginViewState?(.loading(false))
-            loginViewState?(.showError("email o contraseña incorrectos"))
+            loginViewState?(.loginError("email o contraseña incorrectos"))
             return
         }
         
@@ -53,12 +38,33 @@ final class LoginViewModel {
         loginUseCase.login(user: email, password: password) { [weak self] result in
             
             switch result {
-            case let .success(token):
-                self?.token = token
-                LocalDataModel.save(token: token)
-                self?.loginViewState?(.loaded)
-            case let .failure(error):
-                print(error)
+                
+            case .success(_):
+                DispatchQueue.main.async {
+                    self?.loginViewState?(.loaded)
+                }
+
+            case .failure(let error):
+                var messageError = "Unknown Error"
+                
+                switch error {
+                case .malformedURL:
+                    messageError = "malformedURL"
+                case .statusCode(code: let code):
+                    messageError = "statusCode \(String(describing: code))"
+                case .failDecodingData:
+                    messageError = "failDecodingData"
+                case .noData:
+                    messageError = "noData"
+                case .tokenNotFound:
+                    messageError = "tokenNotFound"
+                case .unknown:
+                    messageError = "unknown"
+                }
+                
+                DispatchQueue.main.async {
+                    self?.loginViewState?(.networkError(messageError))
+                }
                 
             }
         }

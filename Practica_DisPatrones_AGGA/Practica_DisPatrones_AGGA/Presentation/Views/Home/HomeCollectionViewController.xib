@@ -4,11 +4,14 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeCollectionViewController" customModule="Practica_DisPatrones_AGGA" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="tuA-zb-b3A" id="aSJ-gn-7aQ"/>
+                <outlet property="loadingView" destination="oWY-cq-aA0" id="ydK-wz-O1I"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,23 +26,38 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tuA-zb-b3A">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ekq-Hk-mhy">
-                        <size key="itemSize" width="150" height="150"/>
-                        <size key="estimatedItemSize" width="150" height="150"/>
+                        <size key="itemSize" width="250" height="250"/>
+                        <size key="estimatedItemSize" width="250" height="250"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="16" minY="12" maxX="16" maxY="12"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWY-cq-aA0">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="lSE-qQ-8jI">
+                            <rect key="frame" x="186" y="369" width="20" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.91855597499999997" green="0.2008762956" blue="0.13596743350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.9423469901" green="0.60626941919999999" blue="0.25768792629999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="tuA-zb-b3A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4AQ-Ke-Vgj"/>
+                <constraint firstAttribute="trailing" secondItem="oWY-cq-aA0" secondAttribute="trailing" id="6fe-Ek-PFt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oWY-cq-aA0" secondAttribute="bottom" id="CKe-Kc-lZ2"/>
                 <constraint firstItem="f3J-73-mbB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dgz-k7-3da"/>
                 <constraint firstItem="f3J-73-mbB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="HAb-q3-g78"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tuA-zb-b3A" secondAttribute="bottom" id="Kht-Sp-gCo"/>
+                <constraint firstItem="oWY-cq-aA0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Mbg-xW-8HQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f3J-73-mbB" secondAttribute="trailing" id="Voc-uc-JfD"/>
                 <constraint firstAttribute="trailing" secondItem="tuA-zb-b3A" secondAttribute="trailing" id="crR-mR-E93"/>
+                <constraint firstItem="oWY-cq-aA0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gDW-n0-eQN"/>
                 <constraint firstItem="tuA-zb-b3A" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ktO-A0-fGw"/>
                 <constraint firstAttribute="bottom" secondItem="f3J-73-mbB" secondAttribute="bottom" id="sT9-lP-ikm"/>
             </constraints>
@@ -48,5 +66,8 @@
     </objects>
     <resources>
         <image name="Login BG" width="390" height="844"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
