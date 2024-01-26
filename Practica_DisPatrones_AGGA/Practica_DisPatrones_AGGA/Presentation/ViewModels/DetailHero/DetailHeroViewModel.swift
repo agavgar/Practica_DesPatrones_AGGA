@@ -17,7 +17,8 @@ final class DetailHeroViewModel {
     var useCase: GenericArrayUseCaseProtocol
     
     var dataHero: DragonBallHero?
-    
+    var hasTransform: Bool?
+
     init(useCase: GenericArrayUseCaseProtocol = GenericArrayUseCase()) {
         self.useCase = useCase
     }
@@ -63,6 +64,21 @@ final class DetailHeroViewModel {
                 DispatchQueue.main.async {
                     self?.statusLoad?(.networkError(messageError))
                 }
+            }
+        }
+    }
+    
+    func checkTransform(id: String, completion: @escaping (Bool) -> Void) {
+        useCase.login(endpoint: EndPoints.transform.rawValue, dataRequest: "id", value: id) { [weak self] (result: Result<[DragonBallTransforms], NetworkErrors>) in
+            switch result {
+            case .success(let transform):
+                let hasTransform = !transform.isEmpty
+                print(hasTransform)
+                completion(hasTransform)
+
+            case .failure(_):
+                print(false)
+                completion(false)
             }
         }
     }

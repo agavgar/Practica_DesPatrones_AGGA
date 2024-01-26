@@ -30,7 +30,7 @@ final class TransformTableViewModel{
         
         guard let value = idReceived else {
             DispatchQueue.main.async {
-                self.statusLoad?(.networkError("Special error: idData non received"))
+                self.statusLoad?(.networkError("Special error: id Data non received"))
             }
             return
         }

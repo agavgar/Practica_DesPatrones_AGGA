@@ -18,7 +18,6 @@ class TransformTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionText: UITextView!
     
     
-    
     //MARK: - Configure
     func configure(with transform: DragonBallTransforms){
         transformLabel.text = transform.name

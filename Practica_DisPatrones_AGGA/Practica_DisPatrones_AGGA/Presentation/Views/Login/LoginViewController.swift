@@ -16,6 +16,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var loadingView: UIView!
+    @IBOutlet weak var loginButton: UIButton!
     
     //MARK: - Models
     private var viewModel: LoginViewModel
@@ -33,6 +34,7 @@ final class LoginViewController: UIViewController {
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loginButton.tintColor = .DBYellow
         setObservers()
         // Do any additional setup after loading the view.
     }
@@ -40,6 +42,7 @@ final class LoginViewController: UIViewController {
     
     
     @IBAction func loginButtonTap(_ sender: UIButton) {
+        
         viewModel.onLoginButton(email: emailTextField.text, password: passwordTextField.text)
     }
     
@@ -88,4 +91,6 @@ extension LoginViewController {
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
     }
+    
+
 }

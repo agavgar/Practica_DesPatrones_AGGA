@@ -28,6 +28,7 @@ final class HomeCollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setUpView(UINavItem: self.navigationItem)
+        setRightBar(UInavItem: self.navigationItem, UInavCont: self.navigationController!)
         collectionView.backgroundColor = UIColor.clear
         
         collectionView.delegate = self
@@ -68,6 +69,21 @@ final class HomeCollectionViewController: UIViewController {
         let okAction = UIAlertAction(title: "Accept", style: .default, handler: nil)
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func setRightBar(UInavItem: UINavigationItem,UInavCont: UINavigationController ){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "LogOut", style: .plain, target: self, action: #selector(logOut))
+        
+        navigationItem.rightBarButtonItem?.tintColor = .DBYellow
+        
+    }
+    
+    @objc
+    func logOut(_sender: Any) {
+        let nextVM = LoginViewModel()
+        let nextVC = LoginViewController(viewModel: nextVM)
+        self.navigationController?.setViewControllers([nextVC], animated: true)
+        
     }
     
 

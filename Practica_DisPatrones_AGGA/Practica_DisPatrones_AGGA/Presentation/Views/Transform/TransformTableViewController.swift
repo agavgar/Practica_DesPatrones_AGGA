@@ -27,13 +27,14 @@ class TransformTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setUpView(UINavItem: self.navigationItem)
+        self.navigationController?.navigationBar.tintColor = .DBYellow
         
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: TransformTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: TransformTableViewCell.identifier)
         
         tableView.backgroundColor = .clear
-        tableView.rowHeight = 150
+        tableView.rowHeight = 155
         
         
         
@@ -80,7 +81,21 @@ class TransformTableViewController: UIViewController {
 extension TransformTableViewController: UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Pulsar Row
+        
+        navigateDetail(indexPath: indexPath)
+        
+        
+    }
+    
+    func navigateDetail(indexPath: IndexPath){
+        
+        guard let transform = viewModel.dataTransform?[indexPath.row] else {
+            return
+        }
+        
+        let nextVM = DetailTransformViewModel(transformReceived: transform)
+        let nextVC = DetailTransformViewController(viewModel: nextVM)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     
 }
