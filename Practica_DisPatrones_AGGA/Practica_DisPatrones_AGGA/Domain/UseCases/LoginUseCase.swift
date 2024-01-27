@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol LoginUseCaseProtocol {
+    func login(user: String, password: String, completion: @escaping (Result<String, NetworkErrors>)-> Void)
+}
+
 final class LoginUseCase {
     
     func login(user: String, password: String, completion: @escaping (Result<String, NetworkErrors>)-> Void){
@@ -59,4 +63,23 @@ final class LoginUseCase {
     }
     
     
+}
+
+//MARK: - LOGIN USE CASE FAKE SUCCESS
+final class LoginUseCaseFakeSuccess: LoginUseCaseProtocol {
+    func login(user: String, password: String, completion: @escaping (Result<String, NetworkErrors>)-> Void){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            let token = "fdsfsdhgj8sfd87sd67f6sdf78sd8f6efbw3"
+            completion(.success(token))
+        }
+    }
+}
+
+//MARK: - LOGIN USE CASE FAKE ERROR
+final class LoginUseCaseFakeError: LoginUseCaseProtocol {
+    func login(user: String, password: String, completion: @escaping (Result<String, NetworkErrors>)-> Void){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            completion(.failure(.tokenNotFound))
+        }
+    }
 }

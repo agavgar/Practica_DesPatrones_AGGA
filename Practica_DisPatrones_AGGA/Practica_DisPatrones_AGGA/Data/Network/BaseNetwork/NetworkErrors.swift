@@ -18,3 +18,6 @@ enum NetworkErrors: Error {
     case unknown
 }
 
+extension NetworkErrors: Equatable{
+    
+}

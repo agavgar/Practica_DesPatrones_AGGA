@@ -31,7 +31,7 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gte-bW-qKE">
                             <rect key="frame" x="14" y="0.0" width="349" height="268.33333333333331"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="268.33333333333331" id="uWe-mR-yfs"/>
+                                <constraint firstAttribute="height" constant="268.33333333333331" id="7DW-zM-SIE"/>
                             </constraints>
                         </imageView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6ki-PO-6wt">
@@ -56,8 +56,8 @@
                     </subviews>
                     <viewLayoutGuide key="safeArea" id="RgY-Oy-RvQ"/>
                     <constraints>
-                        <constraint firstItem="gte-bW-qKE" firstAttribute="leading" secondItem="RgY-Oy-RvQ" secondAttribute="leading" constant="14" id="7CU-3v-W0I"/>
-                        <constraint firstItem="gte-bW-qKE" firstAttribute="leading" secondItem="6ki-PO-6wt" secondAttribute="leading" id="L1i-y8-3Cn"/>
+                        <constraint firstItem="gte-bW-qKE" firstAttribute="leading" secondItem="RgY-Oy-RvQ" secondAttribute="leading" constant="14" id="1UB-uj-fpi"/>
+                        <constraint firstItem="gte-bW-qKE" firstAttribute="leading" secondItem="6ki-PO-6wt" secondAttribute="leading" id="dqU-jK-Jdx"/>
                     </constraints>
                 </stackView>
             </subviews>

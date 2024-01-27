@@ -70,3 +70,26 @@ final class GenericArrayUseCase: GenericArrayUseCaseProtocol {
     }
     
 }
+
+//MARK: - Fake Success
+final class GenericArrayUseCaseSucces: GenericArrayUseCaseProtocol {
+    func login<T>(endpoint: String, dataRequest: String, value: String, completion: @escaping (Result<T, NetworkErrors>) -> Void) where T : Decodable {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            let heroes = [DragonBallHero(name: "Aitor", id: "1", favorite: true, description: "DiseñoPatrones", photo: ""),
+                          DragonBallHero(name: "Adrian", id: "2", favorite: true, description: "FundamentosiOS", photo: ""),
+                          DragonBallHero(name: "Joselbe", id: "3", favorite: false, description: "Asincronismo", photo: "")]
+            
+            completion(.success(heroes as! T))
+        }
+    }
+}
+
+//MARK: - Fake Error
+final class GenericArrayUseCaseFail: GenericArrayUseCaseProtocol {
+    
+    func login<T>(endpoint: String, dataRequest: String, value: String, completion: @escaping (Result<T, NetworkErrors>) -> Void) where T : Decodable {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            completion(.failure(.malformedURL))
+        }
+    }
+}
