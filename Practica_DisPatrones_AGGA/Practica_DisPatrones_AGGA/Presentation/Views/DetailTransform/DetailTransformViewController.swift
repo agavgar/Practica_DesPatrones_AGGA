@@ -32,17 +32,17 @@ final class DetailTransformViewController: UIViewController {
         
         navigationItem.setUpView(UINavItem: self.navigationItem)
         setRightBar(UInavItem: self.navigationItem, UInavCont: self.navigationController!)
-        
         configure(with: viewModel.transformReceived)
         
         
     }
 
     func configure(with transform: DragonBallTransforms){
-        
+        print(transform.description)
         transformName.text = transform.name
         transformImage.setImage(url: transform.photo)
         transformDescription.text = transform.description
+        transformDescription.text = viewModel.transformReceived.description
     }
     
     func setRightBar(UInavItem: UINavigationItem,UInavCont: UINavigationController ){
