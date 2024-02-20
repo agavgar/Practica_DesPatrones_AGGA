@@ -4,10 +4,6 @@
 //
 //  Created by Alejandro Alberto Gavira García on 22/1/24.
 //
-
-import Foundation
-
-
 //MARK: - Custom Errors
 enum NetworkErrors: Error {
     case malformedURL

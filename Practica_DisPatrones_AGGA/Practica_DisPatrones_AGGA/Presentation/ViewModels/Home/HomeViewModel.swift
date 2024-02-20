@@ -15,13 +15,13 @@ final class HomeViewModel {
     var statusLoad: ((GenericStatusLoad) -> Void)?
     
     //MARK: - Conection useCase
-    private let useCase: GenericArrayUseCaseProtocol
+    private let useCase: HeroesUseCaseProtocol
     
     //MARK: - Models
     var dataHeroes: [DragonBallHero] = []
     
     //MARK: - Init
-    init(useCase: GenericArrayUseCaseProtocol = GenericArrayUseCase()) {
+    init(useCase: HeroesUseCaseProtocol = HeroesUseCase()) {
         self.useCase = useCase
     }
     
@@ -32,7 +32,7 @@ final class HomeViewModel {
             self.statusLoad?(.loading(true))
         }
         
-        useCase.login(endpoint:EndPoints.heros.rawValue,dataRequest: "name", value: "") { [weak self] (result: Result<[DragonBallHero], NetworkErrors>) in
+        useCase.getHeroes { [weak self] (result: Result<[DragonBallHero], NetworkErrors>) in
             
             switch result {
 

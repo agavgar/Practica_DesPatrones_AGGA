@@ -95,7 +95,7 @@ extension DetailHeroViewController {
     }
     
     func navigateTable(){
-        let nextVM = TransformTableViewModel(useCase: GenericArrayUseCase())
+        let nextVM = TransformTableViewModel(useCase: TransformUseCase())
         nextVM.idReceived = viewModel.dataHero?.id
         let nextVC = TransformTableViewController(viewModel: nextVM)
         navigationController?.pushViewController(nextVC, animated: true)

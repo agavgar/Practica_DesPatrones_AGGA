@@ -99,14 +99,14 @@ extension HomeCollectionViewController: UICollectionViewDelegate{
     }
     
     func navigateDetail(indexPath: IndexPath){
-        let nextVM = DetailHeroViewModel(useCase: GenericArrayUseCase())
+        let nextVM = DetailHeroViewModel(useCase: HeroesUseCase())
         nextVM.nameReceived = viewModel.dataHeroes[indexPath.row].name
         let nextVC = DetailHeroViewController(viewModel: nextVM)
         navigationController?.pushViewController(nextVC, animated: true)
     }
     
     func navigateFAKETransformTableView(indexPath: IndexPath){
-        let nextVM = TransformTableViewModel(useCase: GenericArrayUseCase())
+        let nextVM = TransformTableViewModel(useCase: TransformUseCase())
         nextVM.idReceived = viewModel.dataHeroes[indexPath.row].id
         let nextVC = TransformTableViewController(viewModel: nextVM)
         navigationController?.pushViewController(nextVC, animated: true)

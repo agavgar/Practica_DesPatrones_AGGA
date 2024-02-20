@@ -14,12 +14,12 @@ final class DetailHeroViewModel {
     
     //Bindign con UI
     var statusLoad: ((GenericStatusLoad) -> Void)?
-    var useCase: GenericArrayUseCaseProtocol
+    var useCase: HeroesUseCaseProtocol
     
     var dataHero: DragonBallHero?
     var hasTransform: Bool?
 
-    init(useCase: GenericArrayUseCaseProtocol = GenericArrayUseCase()) {
+    init(useCase: HeroesUseCaseProtocol = HeroesUseCase()) {
         self.useCase = useCase
     }
     
@@ -29,14 +29,14 @@ final class DetailHeroViewModel {
             self.statusLoad?(.loading(true))
         }
         
-        guard let value = nameReceived else {
+        guard let idHero = nameReceived else {
             DispatchQueue.main.async {
                 self.statusLoad?(.networkError("Error especial, nombre Heroe no recibido"))
             }
             return
         }
         
-        useCase.login(endpoint:EndPoints.heros.rawValue ,dataRequest: "name", value: value){ [weak self] (result: Result<[DragonBallHero],NetworkErrors>) in
+        useCase.getHeroes { [weak self] (result: Result<[DragonBallHero], NetworkErrors>) in
             
             switch result {
                 
@@ -69,7 +69,7 @@ final class DetailHeroViewModel {
     }
     
     func checkTransform(id: String, completion: @escaping (Bool) -> Void) {
-        useCase.login(endpoint: EndPoints.transform.rawValue, dataRequest: "id", value: id) { [weak self] (result: Result<[DragonBallTransforms], NetworkErrors>) in
+        APIProvider.getData(endpoint: EndPoints.transform.rawValue, dataRequest: "id", value: id) { (result: Result<[DragonBallTransforms], NetworkErrors>) in
             switch result {
             case .success(let transform):
                 let hasTransform = !transform.isEmpty

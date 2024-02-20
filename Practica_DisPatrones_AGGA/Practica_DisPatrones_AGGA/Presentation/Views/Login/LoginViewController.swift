@@ -9,8 +9,6 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     
-    let dispatchQ = DispatchQueue.main
-    
     //MARK: - IB Outlets
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -60,7 +58,7 @@ extension LoginViewController {
                 self?.loadingView.isHidden = !isLoading
                 self?.errorLabel.isHidden = true
             case .loaded:
-                self?.dispatchQ.async {
+                DispatchQueue.main.async {
                     self?.loadingView.isHidden = true
                     self?.errorLabel.isHidden = true
                 }
@@ -78,7 +76,7 @@ extension LoginViewController {
     private func navigateToHome(){
         
         DispatchQueue.main.async {
-            let nextVM = HomeViewModel(useCase: GenericArrayUseCase())
+            let nextVM = HomeViewModel(useCase: HeroesUseCase())
             let nextVC = HomeCollectionViewController(viewModel: nextVM)
             self.navigationController?.setViewControllers([nextVC], animated: true)
         }

@@ -14,11 +14,11 @@ final class TransformTableViewModel{
     
     //Binding con UI
     var statusLoad: ((GenericStatusLoad) -> Void)?
-    var useCase: GenericArrayUseCaseProtocol
+    var useCase: TransformUseCaseProtocol
     
     var dataTransform: [DragonBallTransforms]?
     
-    init(useCase: GenericArrayUseCaseProtocol = GenericArrayUseCase()){
+    init(useCase: TransformUseCaseProtocol = TransformUseCase()){
         self.useCase = useCase
     }
     
@@ -35,7 +35,7 @@ final class TransformTableViewModel{
             return
         }
         
-        useCase.login(endpoint:EndPoints.transform.rawValue ,dataRequest: "id", value: value) { [weak self] (result: Result<[DragonBallTransforms], NetworkErrors>) in
+        useCase.getTransform(value: value) { [weak self] (result: Result<[DragonBallTransforms], NetworkErrors>) in
             
             switch result{
                 
